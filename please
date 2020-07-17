@@ -1,3 +1,4 @@
+#!/usr/bin/env php
 <?php
 
 /**
@@ -12,7 +13,7 @@
  * Composer Auto Loader
  */
 
-if ( file_exists( $composer_path = __DIR__ . '/../vendor/autoload.php' ) ) {
+if ( file_exists( $composer_path = __DIR__ . '/vendor/autoload.php' ) ) {
     require $composer_path;
 }
 
@@ -32,4 +33,6 @@ $app = new Navel\Foundation\Application(
 $kernel = $app->make();
 
 // $kernel->handle( Navel\Support\Request::capture );
-$kernel->handle();
+$status = $kernel->handle();
+
+exit($status);
