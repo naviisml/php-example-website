@@ -28,8 +28,6 @@ $app = new Navel\Foundation\Application(
  * Run application
  */
 
-//$kernel = $app->make( App\Console\Kernel );
-$kernel = $app->make();
+$kernel = $app->make(\Navel\Http\Kernel::class);
 
-// $kernel->handle( Navel\Support\Request::capture );
 $kernel->handle();
