@@ -29,8 +29,10 @@ $app = new Navel\Foundation\Application(
  * Run application
  */
 
-$kernel = $app->make(\Navel\Console\Kernel::class);
+$kernel = $app->make(\App\Console\Kernel::class);
 
-$status = $kernel->handle();
+$status = $kernel->handle(
+    $request = \Navel\Helpers\Request::capture()
+);
 
 exit($status);

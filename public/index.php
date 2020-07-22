@@ -28,6 +28,6 @@ $app = new Navel\Foundation\Application(
  * Run application
  */
 
-$kernel = $app->make(\Navel\Http\Kernel::class);
+$kernel = $app->make(\App\Http\Kernel::class);
 
 $kernel->handle();
