@@ -20,14 +20,14 @@ if ( file_exists( $composer_path = __DIR__ . '/../vendor/autoload.php' ) ) {
  * Bootstrap application
  */
 
-$app = new Navel\Foundation\Application(
-    $_ENV['APP_BASE_PATH'] ?? dirname(__DIR__)
-);
+$app = require_once __DIR__.'/bootstrap/app.php';
 
 /**
  * Run application
  */
 
-$kernel = $app->make(\App\Http\Kernel::class);
+$kernel = $app->make( \Navel\Http\Kernel::class );
 
-$kernel->handle();
+$kernel->handle(
+    $request = \Navel\Helpers\Request::capture()
+);

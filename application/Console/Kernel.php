@@ -6,5 +6,4 @@ use Navel\Console\Kernel as ConsoleKernel;
 
 class Kernel extends ConsoleKernel
 {
-
 }
