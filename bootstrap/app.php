@@ -11,6 +11,7 @@
 /**
  * Run the application
  */
+
 $app = new Navel\Foundation\Application(
     $_ENV['APP_BASE_PATH'] ?? dirname(__DIR__)
 );
