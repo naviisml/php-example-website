@@ -1,0 +1,42 @@
+{
+  "name": "navel.dev",
+  "author": "Navi Ismail",
+  "version": "1.0.0",
+  "license": "CC BY-NC-ND 3.0",
+  "private": true,
+  "scripts": {
+    "watch": "npm run dev -- --watch",
+    "dev": "webpack --progress --hide-modules --config=webpack.config.js",
+    "prod": "webpack --no-progress --hide-modules --config=webpack.config.js"
+  },
+  "devDependencies": {
+    "axios": "^0.19",
+    "cross-env": "^5.2.1",
+    "css-loader": "^3.4.2",
+    "extract-loader": "^3.1.0",
+    "file-loader": "^5.0.2",
+    "node-sass": "^4.13.0",
+    "sass": "^1.22.10",
+    "sass-loader": "^8.0.1",
+    "style-loader": "^1.1.2",
+    "vue": "^2.5.17",
+    "vue-loader": "^15.8.3",
+    "vue-template-compiler": "^2.6.11",
+    "resolve-url-loader": "^2.3.1",
+    "webpack": "^4.41.5",
+    "webpack-cli": "^3.3.10"
+  },
+  "dependencies": {
+    "axios": "^0.19.2",
+    "child_process": "^1.0.2",
+    "fs": "0.0.1-security",
+    "module": "^1.2.5",
+    "vform": "^1.0.1",
+    "vue-axios": "^2.1.5",
+    "vue-i18n": "^8.17.5",
+    "vue-meta": "^2.3.3",
+    "vue-router": "^3.4.3",
+    "vuex": "^3.4.0",
+    "vuex-router-sync": "^5.0.0"
+  }
+}

@@ -20,7 +20,7 @@ if ( file_exists( $composer_path = __DIR__ . '/../vendor/autoload.php' ) ) {
  * Bootstrap application
  */
 
-$app = require_once __DIR__.'/bootstrap/app.php';
+$app = require_once __DIR__ . '/../bootstrap/app.php';
 
 /**
  * Run application
