@@ -27,10 +27,10 @@ $app = require_once __DIR__ . '/bootstrap/app.php';
  * Run application
  */
 
-$kernel = $app->make( Navel\Foundation\Console\Kernel::class );
+$kernel = $app->make( Navel\Console\Kernel::class );
 
 $status = $kernel->handle(
-    $request = \Navel\Helpers\Request::capture()
+    $request = ( new \Navel\Helpers\Request )->capture()
 );
 
 exit($status);

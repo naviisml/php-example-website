@@ -29,5 +29,5 @@ $app = require_once __DIR__ . '/../bootstrap/app.php';
 $kernel = $app->make( \Navel\Http\Kernel::class );
 
 $kernel->handle(
-    $request = \Navel\Helpers\Request::capture()
+    $request = ( new \Navel\Helpers\Request )->capture()
 );
