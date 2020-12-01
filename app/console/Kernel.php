@@ -12,6 +12,6 @@ class Kernel extends ConsoleKernel
      * @var array
      */
     protected $commands = [
-        Navel\Foundation\Console\AnotherCommand::class,
+        \Navel\Console\Commands\TestCommand::class,
     ];
 }
