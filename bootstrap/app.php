@@ -31,6 +31,27 @@ $app->instance(
 );
 
 /**
+ * Global functions test
+ */
+
+use Navel\Foundation\Container\Container;
+
+function app()
+{
+    return Container::getInstance('app');
+}
+
+function request()
+{
+    return Container::getInstance('request');
+}
+
+function router()
+{
+    return Container::getInstance('router');
+}
+
+/**
  * Return the application
  */
 
