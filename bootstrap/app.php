@@ -36,19 +36,18 @@ $app->instance(
 
 use Navel\Foundation\Container\Container;
 
-function app()
+function app( $name = null )
 {
-    return Container::getInstance('app');
+    if ( is_null( $name ) ) {
+        return Container::getInstance();
+    }
+
+    return Container::getInstance()->make( $name );
 }
 
 function request()
 {
-    return Container::getInstance('request');
-}
-
-function router()
-{
-    return Container::getInstance('router');
+    return app('request');
 }
 
 /**
