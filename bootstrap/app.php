@@ -21,34 +21,19 @@ $app = new Navel\Foundation\Application(
  */
 
 $app->instance(
-    \Navel\Console\Kernel::class,
+    \Navel\Foundation\Console\Kernel::class,
     \App\Console\Kernel::class
 );
 
 $app->instance(
-    \Navel\Http\Kernel::class,
+    \Navel\Foundation\Http\Kernel::class,
     \App\Http\Kernel::class
 );
 
 /**
- * Global functions test
+ * Include the helpers
  */
-
-use Navel\Foundation\Container\Container;
-
-function app( $name = null )
-{
-    if ( is_null( $name ) ) {
-        return Container::getInstance();
-    }
-
-    return Container::getInstance()->make( $name );
-}
-
-function request()
-{
-    return app('request');
-}
+include 'helpers.php';
 
 /**
  * Return the application

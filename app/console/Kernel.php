@@ -2,7 +2,7 @@
 
 namespace App\Console;
 
-use Navel\Console\Kernel as ConsoleKernel;
+use Navel\Foundation\Console\Kernel as ConsoleKernel;
 
 class Kernel extends ConsoleKernel
 {
@@ -12,6 +12,6 @@ class Kernel extends ConsoleKernel
      * @var array
      */
     protected $commands = [
-        \Navel\Console\Commands\TestCommand::class,
+        \App\Console\Commands\TestCommand::class,
     ];
 }

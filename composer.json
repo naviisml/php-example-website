@@ -16,7 +16,7 @@
     ],
     "require": {
         "php": "^8.0.0",
-        "naveldev/framework": "^1",
+        "naveldev/framework": "*",
         "naveldev/steam-api": "^1"
     },
     "autoload":{
