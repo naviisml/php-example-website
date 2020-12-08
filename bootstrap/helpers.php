@@ -59,5 +59,3 @@ if( !function_exists('router') ) {
         return app('router');
     }
 }
-
-// debug( request() );
