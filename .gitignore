@@ -1,8 +1,20 @@
-/node_modules/
-/vendor/
-/creator/
-public/assets/
-public/build/
+# Custom things
+/app/Http/Controllers/*/
+
+# Packages
+/node_modules/*
+
+# Composer
+/vendor/*
+/creator/*
+
+# Env files
+.env
+
+# Editors
 .vscode/
-composer.phar
-composer.lock
+
+# Log files
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*

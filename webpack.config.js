@@ -9,11 +9,11 @@ module.exports = [
     {
         mode: 'development',
         entry: [
-            './src/resources/assets/js/app.js',
-            './src/resources/assets/scss/app.scss',
+            './resources/js/app.js',
+            './resources/scss/app.scss',
         ],
         output: {
-            path: path.resolve(__dirname, 'public/build/'),
+            path: path.resolve(__dirname, 'public/assets/'),
             filename: 'js/scripts.js',
             chunkFilename: 'js/[id].[hash].js',
         },
@@ -56,7 +56,7 @@ module.exports = [
                             loader: 'file-loader',
                             options: {
                                 name: '[name].[ext]',
-                                outputPath: 'build/fonts/'
+                                outputPath: 'assets/fonts/'
                             }
                         }
                     ]

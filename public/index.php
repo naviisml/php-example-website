@@ -31,5 +31,3 @@ $kernel = $app->make( \Navel\Foundation\Http\Kernel::class );
 $kernel->handle(
     $request = \Navel\Helpers\Request::class
 );
-
-debug( app() );

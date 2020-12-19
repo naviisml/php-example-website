@@ -8,16 +8,11 @@
         {
             "type": "path",
             "url": "creator/naveldev/framework"
-        },
-        {
-            "type": "path",
-            "url": "creator/naveldev/steam-api"
         }
     ],
     "require": {
         "php": "^8.0.0",
-        "naveldev/framework": "*",
-        "naveldev/steam-api": "^1"
+        "naveldev/framework": "2.0.1"
     },
     "autoload":{
         "psr-4":{
