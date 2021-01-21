@@ -1,4 +1,5 @@
 # Custom things
+*.idea*
 /app/Http/Controllers/*/
 
 # Packages
@@ -6,7 +7,7 @@
 
 # Composer
 /vendor/*
-/creator/*
+/workbench/*
 
 # Env files
 .env

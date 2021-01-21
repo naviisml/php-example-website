@@ -12,6 +12,8 @@ class Kernel extends ConsoleKernel
      * @var array
      */
     protected $commands = [
-        
+        \App\Console\Commands\UserCreateCommand::class,
+        \App\Console\Commands\QuestionCommand::class,
+        \App\Console\Commands\TestCommand::class,
     ];
 }
