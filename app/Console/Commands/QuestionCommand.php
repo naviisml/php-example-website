@@ -2,13 +2,10 @@
 
 namespace App\Console\Commands;
 
-use Navel\Helpers\Traits\Console;
 use Navel\Foundation\Console\Commands\Command;
 
 class QuestionCommand extends Command
 {
-    use Console;
-
     /**
      * [public description]
      *

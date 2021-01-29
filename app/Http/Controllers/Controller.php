@@ -2,7 +2,7 @@
 
 namespace App\Http\Controllers;
 
-use App\Http\Controllers\Controller;
+use Navel\Foundation\Http\Controllers\Controller;
 
 class Controller extends Controller
 {

@@ -1,6 +1,5 @@
 # Custom things
 *.idea*
-/app/Http/Controllers/*/
 
 # Packages
 /node_modules/*
